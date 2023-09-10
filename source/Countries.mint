@@ -1,9 +1,11 @@
+/* Representation of a country */
 record Countries.Country {
   flag : String,
   code : String,
   name : String
 }
 
+/* Representation of a country's state */
 record Countries.State {
   code : String,
   name : String
@@ -343,7 +345,7 @@ module Countries {
       {"US", "WY", "Wyoming"}
     ]
 
-  /* Return country information from country code */
+  /* Return all countries */
   fun all : Array(Countries.Country) {
     Array.map(
       COUNTRIES,
